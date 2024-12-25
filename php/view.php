@@ -48,9 +48,11 @@ if (!$row) {
                 <td class="content"><img src="../uploads/<?php echo htmlspecialchars($row['file']); ?>" alt="file"></td>
             </tr>
         </table>
-
-        <div class="back-button">
+        <div class="button-container">
             <a href="index.php" class="back">뒤로가기</a>
+            <a href="../html/board.html" class="write">새글 작성</a>
+            <a href="#" class="delete">글 삭제</a>
+            <a href="#" class="edit">글 수정</a>
         </div>
     </div>
 </body>

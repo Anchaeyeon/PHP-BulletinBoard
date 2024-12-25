@@ -48,24 +48,45 @@ td.content img {
     height: auto;
 }
 
-/* 뒤로가기 버튼 스타일 */
-.back-button {
-    text-align: left;
+/* 버튼들이 같은 라인에 배치하기 위한 스타일 */
+.button-container {
+    display: flex;
     margin-top: 30px;
 }
 
-.back {
+/* 버튼 스타일 */
+.button-container a {
     display: inline-block;
-    padding: 10px 25px;
+    padding: 10px 23px;
     background-color: #868D45;
     color: white;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     transition: background-color 0.3s;
 }
 
-.back:hover {
+.button-container a:hover {
     background-color: #798645;
+}
+
+/* 각 버튼의 배치 */
+.button-container .back {
+    text-align: center;
+}
+
+.button-container .write {
+    text-align: center;
+    margin-left: 65%;
+}
+
+.button-container .delete {
+    text-align: center;
+    margin-left: 6px;
+}
+
+.button-container .edit {
+    text-align: center;
+    margin-left: 6px;
 }
