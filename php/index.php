@@ -17,10 +17,10 @@
                 <th>제목</th>
                 <th>작성자</th>
                 <th>작성날짜</th>
+                <div class="write-button">
+                    <a href="../html/board.html" class="write" name="write">글 작성하기</a>
+                </div>
             </tr>
-            <div class="write-button">
-                <a href="../html/board.html" class="write" name="write">글 작성하기</a>
-            </div>
             
             <?php
             // PHP와 MySQL 연결

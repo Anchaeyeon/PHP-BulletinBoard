@@ -65,27 +65,23 @@ table tr:last-child td {
 }
 
 .write-button {
-    margin-bottom: 20px;
+    text-align: right;
 }
 
+
 .write {
-    display: inline-block; /* 링크를 블록 요소처럼 취급 */
-    padding: 10px 20px; /* 버튼 크기 조정 */
-    background-color: #007bff; /* 버튼 배경색 */
-    color: white; /* 글자 색 */
-    text-align: center; /* 텍스트 중앙 정렬 */
-    border-radius: 5px; /* 모서리 둥글게 처리 */
-    text-decoration: none; /* 링크 밑줄 제거 */
-    font-size: 16px; /* 글자 크기 */
-    transition: background-color 0.3s; /* 배경색 전환 효과 */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #868D45;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 .write:hover {
-    background-color: #0056b3; /* 마우스를 올렸을 때 배경색 변화 */
+    background-color: #798645; /* 마우스를 올렸을 때 배경색 변화 */
 }
 
-.write {
-    position: absolute; /* 위치 고정 */
-    right: 20px; /* 오른쪽에 위치 */
-    top: 20px; /* 필요시 위쪽 위치 조정 */
-}

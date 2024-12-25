@@ -10,6 +10,10 @@ body {
     background-color: #f9f9f9;
     color: #333;
     padding: 20px;
+    display: flex;                /* Flexbox 사용 */
+    justify-content: center;      /* 가로 중앙 정렬 */
+    align-items: center;          /* 세로 중앙 정렬 */
+    height: 100vh;                /* 화면 높이에 맞춰 전체 화면 채움 */
 }
 
 h1 {
@@ -20,8 +24,8 @@ h1 {
 }
 
 .write {
+    width: 100%;
     max-width: 600px;
-    margin: 0 auto;
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
