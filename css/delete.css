@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 가로 방향 중앙 정렬 */
+    align-items: center;    /* 세로 방향 중앙 정렬 */
+    height: 450px;          /* 화면 전체 높이 */
+    box-sizing: border-box; /* 패딩 포함 계산 */
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 40%; /* 가로 길이 줄이기 */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 입력 필드 스타일 */
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+/* 입력 필드에 포커스시 스타일 */
+input[type="password"]:focus {
+    border-color: #868D45;
+    outline: none;
+}
+
+/* 제출 버튼 스타일 */
+input[type="submit"] {
+    background-color: #868D45;
+    color: white;
+    padding: 12px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #798645;
+}
+
+/* 버튼이 비슷한 크기, 일관되게 보이도록 중앙 정렬 */
+button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #868D45;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #798645;
+}
