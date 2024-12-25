@@ -16,7 +16,42 @@ if (!$row) {
 }
 ?>
 
-<!-- 내용 출력 -->
-<h2><?php echo htmlspecialchars($row['title']); ?></h2>
-<p><?php echo nl2br(htmlspecialchars($row['content'])); ?></p>
-<img src="../uploads/<?php echo htmlspecialchars($row['file']); ?>" alt="file">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 보기</title>
+    <link rel="stylesheet" href="../css/view.css"/>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="label">제목</td>
+                <td class="content"><?php echo htmlspecialchars($row['title']); ?></td>
+            </tr>
+            <tr>
+                <td class="label">내용</td>
+                <td class="content"><?php echo nl2br(htmlspecialchars($row['content'])); ?></td>
+            </tr>
+            <tr>
+                <td class="label">작성자</td>
+                <td class="content"><?php echo htmlspecialchars($row['name']); ?></td>
+            </tr>
+            <tr>
+                <td class="label">작성시간</td>
+                <td class="content"><?php echo htmlspecialchars($row['regDate']); ?></td>
+            </tr>
+            <tr>
+                <td class="label">사진</td>
+                <td class="content"><img src="../uploads/<?php echo htmlspecialchars($row['file']); ?>" alt="file"></td>
+            </tr>
+        </table>
+
+        <div class="back-button">
+            <a href="index.php" class="back">뒤로가기</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* 테이블 셀 스타일 */
+td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid rgb(182, 191, 200);
+    background-color: #f9f9f9;
+}
+
+/* 제목 옆에 내용이 배치되도록 하기 위한 스타일 */
+td.label {
+    width: 20%;
+    font-weight: bold;
+    background-color: #eaf4e2;
+}
+
+td.content {
+    width: 80%;
+}
+
+/* 이미지 스타일 */
+td.content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 뒤로가기 버튼 스타일 */
+.back-button {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.back {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: #868D45;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back:hover {
+    background-color: #798645;
+}
