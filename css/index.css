@@ -85,3 +85,7 @@ table tr:last-child td {
     background-color: #798645; /* 마우스를 올렸을 때 배경색 변화 */
 }
 
+a.edit{
+    text-decoration: none;
+    color: black;
+}
