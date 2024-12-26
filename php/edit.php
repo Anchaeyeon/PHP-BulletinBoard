@@ -24,7 +24,7 @@
         exit;
     }
 ?>
-<form action="" method="POST" enctype="multipart/form-data">
+<form action="update.php?id=<?php echo $id;?>" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
     <div class="container">
         <table>
