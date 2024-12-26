@@ -30,6 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     else {
         echo "<script>alert('비밀번호가 일치하지 않습니다.');</script>";
+        echo("<script>location.href='delete.php?id=$id';</script>");
     }
 }
 
