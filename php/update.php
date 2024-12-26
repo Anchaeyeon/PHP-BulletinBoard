@@ -28,12 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($result_update) {
             echo "<script>alert('게시글이 수정되었습니다!');</script>";
-            echo("<script>location.href='index.php';</script>");
+            echo("<script>location.href='view.php?id=$id';</script>");
         } else {
             echo "<script>alert('게시글 수정 중 오류가 발생했습니다.');</script>";
         }
     } else {
         echo "<script>alert('비밀번호가 일치하지 않습니다.');</script>";
+        echo "<script>location.href='edit.php?id=$id';</script>";
     }
 }
 
