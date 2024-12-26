@@ -46,10 +46,37 @@ mysqli_close($conn);
 </head>
 <body>
     <div class="container">
-        <form action="" method="post">
-            <input type="password" name="password" placeholder="비밀번호를 입력해주세요" required>
-            <input type="submit" value="삭제하기">
-        </form>
+        <table>
+            <tr>
+                <td class="label">제목</td>
+                <td class="content"><?php echo htmlspecialchars($row['title']); ?></td>
+            </tr>
+            <tr>
+                <td class="label">내용</td>
+                <td class="content"><?php echo nl2br(htmlspecialchars($row['content'])); ?></td>
+            </tr>
+            <tr>
+                <td class="label">작성자</td>
+                <td class="content"><?php echo htmlspecialchars($row['name']); ?></td>
+            </tr>
+            <tr>
+                <td class="label">작성시간</td>
+                <td class="content"><?php echo htmlspecialchars($row['regDate']); ?></td>
+            </tr>
+            <tr>
+                <td class="label">사진</td>
+                <td class="content"><img src="../uploads/<?php echo htmlspecialchars($row['file']); ?>" alt="file"></td>
+            </tr>
+            <form method="POST" action="">
+                <tr>
+                    <td class="label">비밀번호</td>
+                    <td class="content">
+                        <input type="password" name="password" placeholder="비밀번호를 입력해주세요" required>
+                    </td>
+                </tr>
+                <input type="submit" value="삭제하기">
+            </form>
+        </table>
     </div>
 </body>
 </html>
