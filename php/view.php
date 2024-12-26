@@ -52,7 +52,7 @@ if (!$row) {
             <a href="index.php" class="back">뒤로가기</a>
             <a href="../html/board.html" class="write">새글 작성</a>
             <a href="delete.php?id=<?php echo $id; ?>" class="delete">글 삭제</a>
-            <a href="#" class="edit">글 수정</a>
+            <a href="edit.php?id=<?php echo $id; ?>" class="edit">글 수정</a>
         </div>
     </div>
 </body>
