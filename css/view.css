@@ -71,6 +71,15 @@ td.content img {
     background-color: #798645;
 }
 
+.button-container .back {
+    background-color: #8a8a8a;  /* 기본 색상 */
+    text-align: center;
+}
+
+.button-container .back:hover {
+    background-color: #646363;  /* hover 시 색상 */
+}
+
 /* 각 버튼의 배치 */
 .button-container .back {
     text-align: center;
